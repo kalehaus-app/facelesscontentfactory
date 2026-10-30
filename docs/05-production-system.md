@@ -33,6 +33,7 @@ IDEA BANK ─► SCRIPT ─► (vote result) ─► BUILD in Claude + Higgsfield
 1. `generate_audio` with elevenlabs_v4, **always Desmond, stability 0.45**. One voice for the brand.
 2. Transcribe with faster-whisper, check the take, and get word timings.
 3. Build the scenes, preview 4 frames, fix, then do the full render (XL sandbox, about 2–4 min for 35s).
+3b. **Score:** re-time `production/notice-01/audio/score.py` to the new word timings (impacts on the rule, the twist and the last line; a silence drop before the final line; a knock or sting after the choice). Mix using `audio/MIX.md`. The same palette of sounds every episode = a recognizable series sound.
 4. Normalize loudness to −14 LUFS, upload, confirm, and register in Higgsfield history.
 
 **Cost per episode:** ~2.5 credits per 30s and ~5 credits per 60s (voiceover only). The current balance of 1,170 credits covers **400+ episodes**. Credits are not the constraint.
@@ -44,7 +45,8 @@ IDEA BANK ─► SCRIPT ─► (vote result) ─► BUILD in Claude + Higgsfield
 - [ ] Is Mia on-model (bob, yellow hoodie, phone)?
 - [ ] Is the HUD notice # and clock correct and continuous with the previous episode?
 - [ ] Are both choices defensible? Read the ending to someone and ask which they'd pick.
-- [ ] Loudness is about −14 LUFS and the voice is clear over the SFX.
+- [ ] Loudness is about −14 LUFS and the voice is clear over the music and SFX.
+- [ ] The music has dynamics: at least one silence drop and impacts on the 2–3 key reveals (a flat bed of music = boring).
 - [ ] No real brands, no real people, no real emergency-alert branding (the Notice is fictional, so never mimic official government alerts).
 
 ### 6. Publishing

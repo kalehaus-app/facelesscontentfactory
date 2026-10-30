@@ -34,6 +34,28 @@ I know you're AWAKE. [leaning in] Would you open the door... or stay silent?
 
 Persistent HUD (from 4.1s): `● NOTICE #1`, a clock that ticks from 3:00 → 3:01 → 3:02 AM, and `RULES ACTIVE: 1`.
 
+## Audio (v2: original score)
+
+v1 only had a quiet drone, which felt flat. v2 (`ce3ae…` → **`3f5853a1-0bf8-4124-b963-1cb4c4c69a65`**) adds an original score built in code (`production/notice-01/audio/score.py`), so there's no licensing risk and it can become the series' signature sound:
+
+| Time | Music / SFX | Why |
+|---|---|---|
+| 0.15s | Notification chime | Makes the banner feel like a real alert |
+| 0–25.7s | Tick-tock clock at 100 BPM (gets louder), dark Am–F–Dm–E synth pad whose filter slowly opens | Constant forward pressure |
+| 4.1s → | Sub-bass heartbeat | Starts on the rule |
+| 4.1 / 15.4 / 23.1s | Low "braam" impacts | Rule, peephole, the real Leo's text |
+| 9.0s → / 15.4s → | Bass pulse in 8th notes, doubling to 16ths | Escalation you can feel |
+| 19.7–20.8s | Message sent, phone buzz ×2 | Diegetic phone sound |
+| 21.2–23.1s | Riser into the reply | Payoff for the twist |
+| **25.7s** | **Everything cuts to near-silence plus a faint ringing** | "The knocking stopped." The silence is the scariest beat. |
+| 29.4s | Biggest impact on "AWAKE" | |
+| 30.25–34.0s | Heartbeat returns with a dissonant high cluster, then a hard stop | The choice card |
+| 34.1s | Final knock in silence | Rewatch trigger |
+
+Music is ducked under the voice. The final loudness is −14.9 LUFS.
+
+**Platform note:** this original audio is the brand's sound, and people can reuse it on TikTok/IG ("original audio" spreads the series). If you want the reach boost of a trending sound, add it **in-app at 5–10% volume** rather than replacing the score.
+
 ## Equivalent Content Factory prompt (for the higgsfield.ai UI)
 
 If you'd rather run the next episodes from the web UI than from Claude:
